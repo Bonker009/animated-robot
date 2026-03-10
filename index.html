@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KSHRD Payment Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #f0f4f8;
+        min-height: 100vh;
+        margin: 0;
+        padding: 40px 20px;
+      }
+
+      .card-container {
+        box-shadow:
+          0 10px 25px -5px rgba(0, 81, 141, 0.1),
+          0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      }
+
+      /* V2 Dark Premium */
+      .dark-card {
+        box-shadow:
+          0 20px 40px -10px rgba(0, 0, 0, 0.5),
+          0 8px 16px -6px rgba(0, 0, 0, 0.3);
+      }
+
+      /* V3 Gradient Modern */
+      .gradient-card {
+        box-shadow:
+          0 20px 40px -8px rgba(99, 57, 199, 0.3),
+          0 8px 16px -6px rgba(0, 0, 0, 0.08);
+      }
+
+      /* V4 Minimal */
+      .minimal-card {
+        box-shadow:
+          0 4px 20px -2px rgba(0, 0, 0, 0.08),
+          0 2px 8px -2px rgba(0, 0, 0, 0.04);
+      }
+
+      /* V5 Glass */
+      .glass-wrap {
+        background: linear-gradient(
+          135deg,
+          #0f4c81 0%,
+          #1a7abf 50%,
+          #0d3d6e 100%
+        );
+        border-radius: 20px;
+        padding: 24px;
+      }
+      .glass-card {
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        box-shadow:
+          0 8px 32px rgba(0, 0, 0, 0.25),
+          inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="max-w-7xl mx-auto">
+      <p
+        class="text-gray-400 text-[10px] font-bold tracking-widest uppercase text-center mb-10"
+      >
+        KSHRD Payment Card — Design Variants
+      </p>
+
+      <div class="flex flex-wrap gap-8 justify-center">
+        <!-- V1 · Original -->
+        <div>
+          <p
+            class="text-[10px] font-bold text-gray-400 tracking-widest uppercase text-center mb-3"
+          >
+            V1 
+          </p>
+          <div
+            class="bg-white rounded-xl card-container overflow-hidden border border-gray-200 w-96"
+          >
+            <div class="bg-[#00518D] px-6 py-7 text-white">
+              <span
+                class="text-[10px] font-extrabold tracking-[0.2em] uppercase text-amber-400"
+                >Official Portal</span
+              >
+              <h1 class="text-sm font-bold leading-tight mt-1 opacity-90">
+                Korea Software HRD Center
+              </h1>
+            </div>
+            <div class="px-6 py-2 bg-slate-50/80">
+              <span class="text-gray-400 text-[13px] font-semibold"
+                >Total Payable Amount</span
+              >
+              <div class="flex items-baseline gap-2 mt-1">
+                <span
+                  class="text-[#00518D] text-4xl font-[800] tracking-tighter"
+                  >1,300,000</span
+                >
+                <span class="text-amber-600 text-lg font-extrabold">KHR</span>
+              </div>
+            </div>
+            <div class="px-8 py-4 flex flex-col items-center">
+              <div
+                class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm"
+              >
+                <div
+                  class="w-60 h-60 bg-white flex items-center justify-center"
+                >
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdK8wxm334G8xTpFkZA54mOFxqMgNV59HS5g&s"
+                    alt="Payment QR Code"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <p
+                class="text-[10px] text-gray-400 font-medium leading-relaxed max-w-[260px] text-center mt-4"
+              >
+                Scan the code above with your mobile banking app to complete the
+                transaction.
+              </p>
+            </div>
+            <div class="h-2 bg-[#00518D]"></div>
+          </div>
+        </div>
+
+        <!-- V2 · Dark Premium -->
+        <div>
+          <p
+            class="text-[10px] font-bold text-gray-400 tracking-widest uppercase text-center mb-3"
+          >
+            V2 
+          </p>
+          <div
+            class="dark-card rounded-2xl overflow-hidden w-96"
+            style="background: #12141c"
+          >
+            <div
+              class="px-6 py-7 relative overflow-hidden"
+              style="
+                background: linear-gradient(135deg, #1c2033 0%, #252840 100%);
+              "
+            >
+              <div
+                class="absolute top-0 right-0 w-36 h-36 rounded-full opacity-10"
+                style="
+                  background: radial-gradient(circle, #f5d87e, transparent);
+                  transform: translate(30%, -30%);
+                "
+              ></div>
+              <div class="flex items-center gap-2 mb-1">
+                <div
+                  class="w-1 h-4 rounded-full"
+                  style="background: linear-gradient(180deg, #f5d87e, #c9a84c)"
+                ></div>
+                <span
+                  class="text-[10px] font-extrabold tracking-[0.2em] uppercase"
+                  style="color: #c9a84c"
+                  >Official Portal</span
+                >
+              </div>
+              <h1
+                class="text-sm font-bold leading-tight ml-3"
+                style="color: rgba(255, 255, 255, 0.8)"
+              >
+                Korea Software HRD Center
+              </h1>
+            </div>
+            <div
+              class="px-6 py-2"
+              style="
+                background: #1a1c2a;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+              "
+            >
+              <span
+                class="text-[13px] font-semibold"
+                style="color: rgba(255, 255, 255, 0.4)"
+                >Total Payable Amount</span
+              >
+              <div class="flex items-baseline gap-2 mt-1">
+                <span class="text-4xl font-[800] tracking-tighter text-white"
+                  >1,300,000</span
+                >
+                <span class="text-lg font-extrabold" style="color: #c9a84c"
+                  >KHR</span
+                >
+              </div>
+            </div>
+            <div
+              class="px-8 py-5 flex flex-col items-center"
+              style="background: #12141c"
+            >
+              <div
+                class="p-4 rounded-xl"
+                style="
+                  background: #1e2030;
+                  border: 1px solid rgba(245, 216, 126, 0.15);
+                  box-shadow: 0 0 24px rgba(201, 168, 76, 0.08);
+                "
+              >
+                <div class="w-60 h-60 rounded-lg overflow-hidden">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdK8wxm334G8xTpFkZA54mOFxqMgNV59HS5g&s"
+                    alt="Payment QR Code"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <p
+                class="text-[10px] font-medium text-center mt-4 max-w-[260px] leading-relaxed"
+                style="color: rgba(255, 255, 255, 0.3)"
+              >
+                Scan the code above with your mobile banking app to complete the
+                transaction.
+              </p>
+            </div>
+            <div
+              class="h-2"
+              style="
+                background: linear-gradient(90deg, #c9a84c, #f5d87e, #c9a84c);
+              "
+            ></div>
+          </div>
+        </div>
+
+        <!-- V3 · Gradient Modern -->
+        <div>
+          <p
+            class="text-[10px] font-bold text-gray-400 tracking-widest uppercase text-center mb-3"
+          >
+            V3 
+          </p>
+          <div class="gradient-card rounded-2xl overflow-hidden w-96 bg-white">
+            <div
+              class="px-6 py-7 text-white relative overflow-hidden"
+              style="
+                background: linear-gradient(135deg, #6339c7 0%, #3b7fe8 100%);
+              "
+            >
+              <div
+                class="absolute -bottom-8 -right-8 w-32 h-32 rounded-full opacity-20"
+                style="background: white"
+              ></div>
+              <div
+                class="absolute -top-4 -left-4 w-24 h-24 rounded-full opacity-10"
+                style="background: white"
+              ></div>
+              <span
+                class="text-[10px] font-extrabold tracking-[0.2em] uppercase text-purple-200"
+                >Official Portal</span
+              >
+              <h1
+                class="text-sm font-bold leading-tight mt-1"
+                style="color: rgba(255, 255, 255, 0.9)"
+              >
+                Korea Software HRD Center
+              </h1>
+            </div>
+            <div class="px-6 py-2 bg-white">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-gray-400 text-[13px] font-semibold"
+                    >Total Payable Amount</span
+                  >
+                  <div class="flex items-baseline gap-2 mt-1">
+                    <span
+                      class="text-4xl font-[800] tracking-tighter"
+                      style="
+                        background: linear-gradient(135deg, #6339c7, #3b7fe8);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                      "
+                      >1,300,000</span
+                    >
+                    <span class="text-lg font-extrabold text-purple-500"
+                      >KHR</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="text-[9px] font-bold px-2 py-1 rounded-full text-white"
+                  style="background: linear-gradient(135deg, #6339c7, #3b7fe8)"
+                  >QR PAY</span
+                >
+              </div>
+            </div>
+            <div
+              class="mx-6 h-px"
+              style="
+                background: linear-gradient(
+                  90deg,
+                  transparent,
+                  #d8d0ff,
+                  transparent
+                );
+              "
+            ></div>
+            <div class="px-8 py-5 flex flex-col items-center bg-white">
+              <div
+                class="p-4 rounded-xl"
+                style="
+                  background: linear-gradient(135deg, #f5f3ff, #eff6ff);
+                  border: 1px solid #e0d9ff;
+                "
+              >
+                <div class="w-60 h-60">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdK8wxm334G8xTpFkZA54mOFxqMgNV59HS5g&s"
+                    alt="Payment QR Code"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <p
+                class="text-[10px] text-gray-400 font-medium text-center mt-4 max-w-[260px] leading-relaxed"
+              >
+                Scan the code above with your mobile banking app to complete the
+                transaction.
+              </p>
+            </div>
+            <div
+              class="h-2"
+              style="
+                background: linear-gradient(90deg, #6339c7, #3b7fe8, #6339c7);
+              "
+            ></div>
+          </div>
+        </div>
+
+        <div>
+          <p
+            class="text-[10px] font-bold text-gray-400 tracking-widest uppercase text-center mb-3"
+          >
+            V4 
+          </p>
+          <div
+            class="minimal-card rounded-2xl overflow-hidden w-96 bg-white border border-gray-100"
+          >
+            <div class="h-2 bg-[#00518D]"></div>
+            <div class="px-6 pt-5 pb-4 flex items-center gap-3">
+              <div
+                class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+                style="background: #e8f1fa"
+              >
+                <img src="assets/HRD Logo New.png" />
+              </div>
+              <div>
+                <p
+                  class="text-[9px] font-extrabold tracking-[0.18em] uppercase text-gray-400"
+                >
+                  Official Portal
+                </p>
+                <p class="text-xs font-bold text-gray-800 leading-tight">
+                  Korea Software HRD Center
+                </p>
+              </div>
+            </div>
+            <div class="mx-6 h-px bg-gray-100"></div>
+            <div class="px-6 py-2">
+              <p class="text-gray-400 text-[13px] font-semibold mb-1">
+                Total Payable Amount
+              </p>
+              <div class="flex items-baseline gap-1.5">
+                <span class="text-4xl font-[800] tracking-tighter text-gray-900"
+                  >1,300,000</span
+                >
+                <span class="text-base font-extrabold" style="color: #00518d"
+                  >KHR</span
+                >
+              </div>
+            </div>
+            <div class="mx-6 h-px bg-gray-100"></div>
+            <div class="px-8 py-5 flex flex-col items-center">
+              <div
+                class="p-3 rounded-xl border border-gray-100 shadow-sm bg-white"
+              >
+                <div class="w-60 h-60">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdK8wxm334G8xTpFkZA54mOFxqMgNV59HS5g&s"
+                    alt="Payment QR Code"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <p
+                class="text-[10px] text-gray-400 text-center mt-4 max-w-[260px] leading-relaxed"
+              >
+                Scan the code above with your mobile banking app to complete the
+                transaction.
+              </p>
+            </div>
+            <div class="px-6 pb-2 flex items-center justify-center gap-2">
+              <div class="w-1.5 h-1.5 rounded-full bg-[#00518D]"></div>
+              
+              <div class="w-1.5 h-1.5 rounded-full bg-[#00518D]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
